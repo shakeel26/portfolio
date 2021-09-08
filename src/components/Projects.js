@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import CodeIcon from '@material-ui/icons/Code';
 import { projects } from "../data";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -15,28 +14,19 @@ const useStyles = makeStyles((theme) => ({
   media: {
     height: "100px"
   },
-  iconCode: {
-    width: '40%',
-    height: '40%'
-  },
   codeIconCard: {
+    alignItems: 'center',
     display: 'flex',
     justifyContent: 'center',
     flexWrap: 'wrap',
     listStyle: 'none',
     padding: theme.spacing(0.5),
     margin: 0,
+    maxWidth: '450px',
+    marginLeft: '40%',
   },
   chip: {
     margin: theme.spacing(0.5),
-  },
-  listTech: {
-    display: 'flex',
-    justifyContent: 'left',
-    flexWrap: 'wrap',
-    listStyle: 'none',
-    padding: theme.spacing(0.5),
-    margin: 0,
   },
   listProjects: {
     display: 'flex',
@@ -57,21 +47,21 @@ function Projects() {
   return (
     <section id="projects">
 
-      <Card item xs={12} className={classes.codeIconCard}>
-        <CardContent className={classes.content}>
-          <Typography>
-            <CodeIcon fontSize='large' className={classes.iconCode} />
-          </Typography>
+      <div className={classes.codeIconCard}>
+        <CardContent>
           <Typography component="h1" variant="h4">
             I have built!
           </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
         </CardContent>
-      </Card>
+      </div>
 
       <Grid container xs={12} className={classes.listProjects} spacing={10}>
-
         {projects.map((project) =>
-          <Grid item xs={12} sm={6} md={6} lg={4}>
+          <Grid item xs={12} sm={6} md={6} lg={5}>
             <Card>
               <CardMedia
                 className={classes.media}
@@ -95,8 +85,7 @@ function Projects() {
                   {project.link}
                 </Link>
 
-                <Typography component="ul" className={classes.listTech}>
-
+                <Typography component="ul" className={classes.listProjects}>
                   {project.tech.map((element) =>
                     <Chip
                       label={element}
@@ -105,12 +94,12 @@ function Projects() {
                   )}
 
                 </Typography>
-
               </CardContent>
             </Card>
           </Grid>
         )}
       </Grid>
+
     </section>
   )
 }
