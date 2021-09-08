@@ -51,7 +51,7 @@ const About = () => {
           </CardContent>
 
           <div className={classes.buttons}>
-            <Link href="#">
+            <Link href="#contact">
               <Button variant="contained" color="primary">
                 Contact
               </Button>

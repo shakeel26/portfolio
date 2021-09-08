@@ -22,6 +22,11 @@ function Navbar() {
 
     <AppBar position="static" className={classes.mainContainer}>
       <Toolbar className={classes.menuItems}>
+
+      <MenuItem>
+          <Link href="" >Shakeel</Link>
+        </MenuItem>
+
         <MenuItem>
           <Link href="#about" >About</Link>
         </MenuItem>
@@ -30,9 +35,6 @@ function Navbar() {
         </MenuItem>
         <MenuItem>
           <Link href="#projects" >Projects</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link href="#testimonials" >Testimonials</Link>
         </MenuItem>
         <MenuItem>
           <Link href="#contact" >Contact</Link>

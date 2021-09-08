@@ -6,6 +6,7 @@ import ListItem from "@material-ui/core/ListItem";
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Button from '@material-ui/core/Button';
+import CardContent from "@material-ui/core/CardContent";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -48,6 +49,20 @@ function Contact() {
 
     <section id="contact" className="relative">
 
+<div className={classes.codeIconCard}>
+        <CardContent>
+        <Typography gutterBottom variant="h5" component="h2">
+            Get In Touch !
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+            suscipit officia aspernatur veritatis. Asperiores, aliquid?
+            Email me at <a href="mailto:someone@example.com" target="_top">someone@example.com</a>
+            or call at <a href="tel:+436607553781" target="_top">06607553781</a>
+          </Typography>
+        </CardContent>
+      </div>
+
       <Grid container xs={12} spacing={10}>
 
         <Grid item xs={12} sm={6} md={6} lg={6}>
@@ -68,15 +83,7 @@ function Contact() {
 
         <Grid item xs={12} sm={6} md={6} lg={6}>
 
-          <Typography gutterBottom variant="h5" component="h2">
-            Get In Touch !
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-            suscipit officia aspernatur veritatis. Asperiores, aliquid?
-            Email me at <a href="mailto:someone@example.com" target="_top">someone@example.com</a>
-            or call at <a href="tel:+436607553781" target="_top">06607553781</a>
-          </Typography>
+        
 
           <form
             netlify
