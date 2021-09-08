@@ -35,7 +35,7 @@ function Navbar() {
           <Link href="#testimonials" >Testimonials</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="#Contact" >Contact</Link>
+          <Link href="#contact" >Contact</Link>
         </MenuItem>
       </Toolbar>
     </AppBar>
