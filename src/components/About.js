@@ -1,4 +1,5 @@
 import React from 'react';
+import { about } from '../data';
 import { makeStyles } from "@material-ui/core/styles";
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
@@ -36,32 +37,16 @@ const About = () => {
   return (
     <section id="about">
       <Grid container spacing={3} className={classes.root}>
+        {about.map((about) => 
+        
         <Grid item xs={6}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
-              Shakeel here !
+              {about.title}
             </Typography>
             <Typography>
-              Mac Miller             Mac Miller
-              Mac Miller
-              Mac Millerv
-              Mac Miller
-              Mac Miller
-              Mac Miller             Mac Miller
-              Mac Miller
-              Mac Millerv
-              Mac Miller
-              Mac Miller
-              Mac Miller             Mac Miller
-              Mac Miller
-              Mac Millerv
-              Mac Miller
-              Mac Miller
-              Mac Miller             Mac Miller
-              Mac Miller
-              Mac Millerv
-              Mac Miller
-              Mac Miller
+            {about.description}
+          
             </Typography>
           </CardContent>
 
@@ -80,6 +65,9 @@ const About = () => {
           </div>
 
         </Grid>
+        
+        )}
+        
 
         <Grid item xs={6}>
           <img

@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
 
-    <AppBar className={classes.mainContainer}>
+    <AppBar position="static" className={classes.mainContainer}>
       <Toolbar className={classes.menuItems}>
         <MenuItem>
           <Link href="#about" >About</Link>

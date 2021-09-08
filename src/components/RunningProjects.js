@@ -1,10 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { projects } from "../data";
-import ProjectCard from './ProjectCard';
+import { runningProjects } from "../data";
+import Card from "@material-ui/core/Card";
+import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
+import ProjectCard from "./ProjectCard";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-const Projects = () => {
+const RunningProjects = () => {
 
   const classes = useStyles();
 
@@ -32,7 +34,7 @@ const Projects = () => {
       <div className={classes.codeIconCard}>
         <CardContent>
           <Typography component="h1" variant="h4">
-            Apps have built!
+            Running Projects!
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
@@ -40,11 +42,13 @@ const Projects = () => {
           </Typography>
         </CardContent>
       </div>
+      
 
-      <ProjectCard data={projects} />
+      <ProjectCard data={runningProjects} />
+
 
     </section>
   )
 }
 
-export default Projects;
+export default RunningProjects;

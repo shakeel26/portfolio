@@ -1,12 +1,17 @@
+export const about = [{
+  title: "Shakeel here!",
+  description: "Mac Miller Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller "
+}];
+
 export const projects = [
   {
     title: "React Reserve",
     subtitle: "MERN Stack",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./projects/html-5.svg",
+    image: "",
     link: "https://reactbootcamp.com",
-    tech: ['a', 'b', 'c']
+    tech: ['JavaScript', 'Python', 'Mongoose']
   },
   {
     title: "React Tracks",
@@ -35,6 +40,27 @@ export const projects = [
     link: "https://pythonbootcamp.com",
     tech: ['a', 'b', 'c']
   },
+];
+
+export const runningProjects = [
+  {
+    title: "React Reserve",
+    subtitle: "MERN Stack",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "",
+    link: "https://reactbootcamp.com",
+    tech: ['JavaScript', 'Python', 'Mongoose']
+  },
+  {
+    title: "React Reserve",
+    subtitle: "MERN Stack",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "",
+    link: "https://reactbootcamp.com",
+    tech: ['JavaScript', 'Python', 'Mongoose']
+  }
 ];
 
 export const skills = [

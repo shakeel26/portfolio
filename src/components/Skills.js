@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     width: '100px'
     },
   skillsHeading: {
-    justifyContent: 'center'
+    justifyContent: 'center',
+    textDecorationLine: 'underline'
   }
 }));
 
@@ -38,11 +39,9 @@ function Skills() {
   return (
     <section id="skills">
 
-      <div className={classes.skillsHeading}>
-        <Typography component="h1" variant="h4">
-          I have built!
+        <Typography className={classes.skillsHeading} component="h1" variant="h4">
+          Skills & Technologies
         </Typography>
-      </div>
 
 
       <Grid container xs={6} spacing={2} className={classes.listProjects}>
