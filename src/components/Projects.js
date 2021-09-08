@@ -9,7 +9,6 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Link from '@material-ui/core/Link';
 import Chip from '@material-ui/core/Chip';
-import Paper from '@material-ui/core/Paper';
 
 
 const useStyles = makeStyles((theme) => ({
