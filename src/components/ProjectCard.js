@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -10,6 +10,9 @@ import Grid from "@material-ui/core/Grid";
 
 
 const useStyles = makeStyles((theme) => ({
+
+
+
     media: {
         height: "100px"
     },
@@ -34,10 +37,18 @@ const useStyles = makeStyles((theme) => ({
         listStyle: 'none',
         padding: theme.spacing(0.5),
         margin: 0,
-    }
+    },
+    cardHovered: {
+        transform: "scale3d(1.05, 1.05, 1)"
+      }
 }));
 
 const ProjectCard = (props) => {
+
+    const [hoverCard, sethoverCard] = useState({
+        raised:false,
+        shadow:1,
+      })
 
     const classes = useStyles();
 
@@ -45,7 +56,11 @@ const ProjectCard = (props) => {
         <Grid container xs={12} className={classes.listProjects} spacing={10}>
             {props.data.map((project) =>
                 <Grid item xs={12} sm={6} md={6} lg={5}>
-                    <Card>
+                    <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}
+                    onMouseOver={()=>sethoverCard({ raised: true, shadow:3})} 
+                    onMouseOut={()=>sethoverCard({ raised:false, shadow:1 })}
+                    raised={hoverCard.raised} zdepth={hoverCard.shadow}
+                    >
                         <CardMedia
                             className={classes.media}
                             image={project.image}

@@ -48,18 +48,18 @@ export const runningProjects = [
     subtitle: "WordPress using Elementor",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
+    image: "./projects/hartl_consulting_logo.png",
     link: "https://hartl-consulting.at/",
     tech: ['WordPress', 'Elementor', 'CSS']
   },
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "May's Grill",
+    subtitle: "MERN Stack Project",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "",
-    link: "https://reactbootcamp.com",
-    tech: ['JavaScript', 'Python', 'Mongoose']
+    image: "./projects/mays-grill-logo.png",
+    link: "https://mays-grill.at/",
+    tech: ['React', 'Node.js', 'Mongoose']
   }
 ];
 
