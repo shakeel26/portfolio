@@ -49,9 +49,9 @@ function Contact() {
 
     <section id="contact" className="relative">
 
-<div className={classes.codeIconCard}>
+      <div className={classes.codeIconCard}>
         <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2">
             Get In Touch !
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
@@ -83,7 +83,12 @@ function Contact() {
 
         <Grid item xs={12} sm={6} md={6} lg={6}>
 
-        
+          <Typography gutterBottom variant="h5" component="h2">
+            Address !
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Hans-Untermüller-Straße 8, 6020 Innsbruck, Austria
+          </Typography>
 
           <form
             netlify
@@ -111,7 +116,7 @@ function Contact() {
             </Typography>
 
             <TextareaAutosize
-            required
+              required
               className={classes.textArea}
               minRows={4}
               id="standard-basic"
@@ -124,7 +129,7 @@ function Contact() {
               <Button type="submit" variant="contained" color="primary">
                 Send!
               </Button>
-              </Typography>
+            </Typography>
           </form>
         </Grid>
 

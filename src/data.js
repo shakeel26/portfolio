@@ -44,13 +44,13 @@ export const projects = [
 
 export const runningProjects = [
   {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
+    title: "Hartl Consulting",
+    subtitle: "WordPress using Elementor",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "",
-    link: "https://reactbootcamp.com",
-    tech: ['JavaScript', 'Python', 'Mongoose']
+    link: "https://hartl-consulting.at/",
+    tech: ['WordPress', 'Elementor', 'CSS']
   },
   {
     title: "React Reserve",

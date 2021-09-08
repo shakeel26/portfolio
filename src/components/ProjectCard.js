@@ -64,7 +64,7 @@ const ProjectCard = (props) => {
                                 {project.description}
                             </Typography>
 
-                            <Link href={project.link}>
+                            <Link href={project.link} target="_blank">
                                 {project.link}
                             </Link>
 
