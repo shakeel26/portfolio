@@ -123,8 +123,8 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
             />
 
-            <Typography gutterBottom variant="h6" component="h6">
-              <Button type="submit" variant="contained" color="primary">
+            <Typography gutterBottom variant="h6" component="h6" color="inherit">
+              <Button type="submit" variant="contained" >
                 Send!
               </Button>
             </Typography>
