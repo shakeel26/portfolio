@@ -39,7 +39,7 @@ const About = () => {
       <Grid container spacing={3} className={classes.root}>
         {about.map((about) => 
         
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6} lg={6}>
           <CardContent className={classes.content}>
             <Typography component="h5" variant="h5">
               {about.title}
@@ -69,7 +69,7 @@ const About = () => {
         )}
         
 
-        <Grid item xs={6}>
+        <Grid item xs={12} md={6} lg={6}>
           <img
             className={classes.cover}
             src="./set-programmer-icon.webp"
