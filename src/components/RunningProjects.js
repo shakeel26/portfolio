@@ -18,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     listStyle: 'none',
     padding: theme.spacing(0.5),
     margin: 0,
-    maxWidth: '450px',
-    marginLeft: '40%',
+    maxWidth: '450px'
+    // marginLeft: '40%',
   }
 }));
 
@@ -32,7 +32,6 @@ const RunningProjects = () => {
     <section id="projects">
 
       <div className={classes.codeIconCard}>
-        <CardContent>
           <Typography component="h1" variant="h4">
             Running Projects!
           </Typography>
@@ -40,7 +39,6 @@ const RunningProjects = () => {
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
-        </CardContent>
       </div>
       
 

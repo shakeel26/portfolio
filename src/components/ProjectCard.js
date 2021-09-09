@@ -10,22 +10,8 @@ import Grid from "@material-ui/core/Grid";
 
 
 const useStyles = makeStyles((theme) => ({
-
-
-
     media: {
-        height: "100px"
-    },
-    codeIconCard: {
-        alignItems: 'center',
-        display: 'flex',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        listStyle: 'none',
-        padding: theme.spacing(0.5),
-        margin: 0,
-        maxWidth: '450px',
-        marginLeft: '40%',
+        height: "120px"
     },
     chip: {
         margin: theme.spacing(0.5),
@@ -36,10 +22,13 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         listStyle: 'none',
         padding: theme.spacing(0.5),
-        margin: 0,
+        margin: 0
     },
     cardHovered: {
         transform: "scale3d(1.05, 1.05, 1)"
+      },
+      eachProjectCard: {
+          width: '50px'
       }
 }));
 
@@ -55,7 +44,7 @@ const ProjectCard = (props) => {
     return (
         <Grid container xs={12} className={classes.listProjects} spacing={10}>
             {props.data.map((project) =>
-                <Grid item xs={12} sm={6} md={6} lg={5}>
+                <Grid item xs={12} sm={5} md={5} lg={6} className={classes.eachProjectCard}>
                     <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}
                     onMouseOver={()=>sethoverCard({ raised: true, shadow:3})} 
                     onMouseOut={()=>sethoverCard({ raised:false, shadow:1 })}

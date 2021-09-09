@@ -7,11 +7,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 
 const useStyles = makeStyles(theme => ({
   mainContainer: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#111a20'
   },
   menuItems: {
-    alignItems: 'center'
-  }
+    alignItems: 'center'  }
 }))
 
 
@@ -24,20 +23,20 @@ function Navbar() {
       <Toolbar className={classes.menuItems}>
 
       <MenuItem>
-          <Link href="" >Shakeel</Link>
+          <Link color="inherit" href="" >Shakeel</Link>
         </MenuItem>
 
         <MenuItem>
-          <Link href="#about" >About</Link>
+          <Link color="inherit" href="#about" >About</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="#skills" >Skills</Link>
+          <Link color="inherit" href="#skills" >Skills</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="#projects" >Projects</Link>
+          <Link color="inherit" href="#projects" >Projects</Link>
         </MenuItem>
         <MenuItem>
-          <Link href="#contact" >Contact</Link>
+          <Link color="inherit" href="#contact" >Contact</Link>
         </MenuItem>
       </Toolbar>
     </AppBar>

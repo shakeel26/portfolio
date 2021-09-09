@@ -7,8 +7,6 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 
-
-
 const useStyles = makeStyles(theme => ({
   root: {
     marginTop: '5%',
@@ -36,38 +34,35 @@ const About = () => {
 
   return (
     <section id="about">
-      <Grid container spacing={3} className={classes.root}>
-        {about.map((about) => 
-        
-        <Grid item xs={12} md={6} lg={6}>
-          <CardContent className={classes.content}>
-            <Typography component="h5" variant="h5">
-              {about.title}
-            </Typography>
-            <Typography>
-            {about.description}
-          
-            </Typography>
-          </CardContent>
+      <Grid container spacing={10} className={classes.root}>
+        {about.map((about) =>
+          <Grid item xs={12} md={6} lg={6}>
+            <CardContent className={classes.content}>
+              <Typography component="h5" variant="h5">
+                {about.title}
+              </Typography>
+              <Typography>
+                {about.description}
 
-          <div className={classes.buttons}>
-            <Link href="#contact">
-              <Button variant="contained" color="primary">
-                Contact
-              </Button>
-            </Link>
+              </Typography>
+            </CardContent>
 
-            <Link href="#projects" className={classes.button2}>
-              <Button variant="contained" color="primary">
-                Previous work
-              </Button>
-            </Link>
-          </div>
+            <div className={classes.buttons}>
+              <Link href="#contact" color="inherit">
+                <Button variant="contained">
+                  Contact
+                </Button>
+              </Link>
 
-        </Grid>
-        
+              <Link href="#projects" className={classes.button2} color="inherit">
+                <Button variant="contained" >
+                  Previous work
+                </Button>
+              </Link>
+            </div>
+
+          </Grid>
         )}
-        
 
         <Grid item xs={12} md={6} lg={6}>
           <img
