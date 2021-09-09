@@ -1,12 +1,7 @@
 import React from "react";
 import { skills } from "../data";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Link from '@material-ui/core/Link';
-import Chip from '@material-ui/core/Chip';
 import { makeStyles } from "@material-ui/core/styles";
 
 
@@ -31,8 +26,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-function Skills() {
-
+const Skills = () => {
 
   const classes = useStyles();
 

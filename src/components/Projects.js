@@ -2,10 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { projects } from "../data";
 import ProjectCard from './ProjectCard';
-import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import { Card } from "@material-ui/core";
-
 
 const useStyles = makeStyles((theme) => ({
   codeIconCard: {

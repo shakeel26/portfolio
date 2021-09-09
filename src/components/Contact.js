@@ -2,12 +2,9 @@ import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import ListItem from "@material-ui/core/ListItem";
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Button from '@material-ui/core/Button';
-import CardContent from "@material-ui/core/CardContent";
-
 
 const useStyles = makeStyles((theme) => ({
   textArea: {
@@ -16,8 +13,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-
-function Contact() {
+const Contact = () => {
 
   const classes = useStyles();
 
@@ -25,7 +21,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function encode(data) {
+  const encode = (data) => {
     return Object.keys(data)
       .map(
         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
@@ -33,7 +29,7 @@ function Contact() {
       .join("&");
   }
 
-  function handleSubmit(e) {
+  const handleSubmit = (e) => {
     e.preventDefault();
     fetch("/", {
       method: "POST",

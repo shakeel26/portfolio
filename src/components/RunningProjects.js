@@ -1,11 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { runningProjects } from "../data";
-import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
-import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import Grid from "@material-ui/core/Grid";
 import ProjectCard from "./ProjectCard";
 
 
@@ -25,12 +21,10 @@ const useStyles = makeStyles((theme) => ({
 
 
 const RunningProjects = () => {
-
   const classes = useStyles();
 
   return (
     <section id="projects">
-
       <div className={classes.codeIconCard}>
           <Typography component="h1" variant="h4">
             Running Projects!
@@ -41,10 +35,7 @@ const RunningProjects = () => {
           </Typography>
       </div>
       
-
       <ProjectCard data={runningProjects} />
-
-
     </section>
   )
 }
