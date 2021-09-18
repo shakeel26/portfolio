@@ -5,20 +5,19 @@ import Grid from "@material-ui/core/Grid";
 import { makeStyles } from "@material-ui/core/styles";
 
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
 
-  listProjects: {
+  listSkills: {
     display: "inline-flex",
     justifyContent: 'center',
-    flexWrap: 'wrap',
-    listStyle: 'none',
-    padding: theme.spacing(0.5),
+    // flexWrap: 'wrap',
+    // listStyle: 'none',
     margin: 0,
     marginLeft: '30%'
   },
   skillIcon: {
     width: '100px'
-    },
+  },
   skillsHeading: {
     alignContent: 'center',
     textDecorationLine: 'underline'
@@ -33,18 +32,18 @@ const Skills = () => {
   return (
     <section id="skills">
 
-        <Typography className={classes.skillsHeading} component="h1" variant="h4" align="center">
-          Skills & Technologies
-        </Typography>
+      <Typography className={classes.skillsHeading} component="h1" variant="h4" align="center">
+        Skills & Technologies
+      </Typography>
 
-      <Grid container xs={6} spacing={2} className={classes.listProjects}>
+      <Grid container xs={6} spacing={2} className={classes.listSkills}>
         {skills.map((skill) =>
-          <Grid item xs={6} sm={3} md={6} lg={2} className={classes.listSkills}>
-              <img
+          <Grid item xs={6} sm={3} md={6} lg={2}>
+            <img
               className={classes.skillIcon}
-                src={skill.image}
-                alt={skill.title}
-              />
+              src={skill.image}
+              alt={skill.title}
+            />
           </Grid>
         )}
       </Grid>

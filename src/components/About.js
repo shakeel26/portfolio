@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: '5%',
+    // marginTop: '5%',
   },
   cover: {
     alignItems: 'right',
@@ -24,9 +24,7 @@ const useStyles = makeStyles(theme => ({
   },
   button2: {
     marginLeft: '4%'
-  },
-
-
+  }
 }))
 
 const About = () => {

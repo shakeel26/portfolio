@@ -25,11 +25,12 @@ const useStyles = makeStyles((theme) => ({
         margin: 0
     },
     cardHovered: {
-        transform: "scale3d(1.05, 1.05, 1)"
+        transform: "scale3d(1, 1.05, 1)"
       },
       eachProjectCard: {
-          width: '50px'
-      }
+        padding: theme.spacing(1),
+        textAlign: "center",
+        color: theme.palette.text.secondary      }
 }));
 
 const ProjectCard = (props) => {
@@ -42,7 +43,7 @@ const ProjectCard = (props) => {
     const classes = useStyles();
 
     return (
-        <Grid container xs={12} className={classes.listProjects} spacing={10}>
+        <Grid container className={classes.listProjects} spacing={5}>
             {props.data.map((project) =>
                 <Grid item xs={12} sm={5} md={5} lg={6} className={classes.eachProjectCard}>
                     <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}

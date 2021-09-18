@@ -8,15 +8,13 @@ const useStyles = makeStyles((theme) => ({
   
 }));
 
-
 const Projects = () => {
-
   const classes = useStyles();
 
   return (
     <section id="projects">
       <>
-          <Typography component="h3" variant="h5" align="center">
+          <Typography component="h1" variant="h4" align="center">
             Apps have built!
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p" align="center">
@@ -25,7 +23,7 @@ const Projects = () => {
           </Typography>
       </>
 
-      <ProjectCard data={projects} />
+     <ProjectCard data={projects} />
 
     </section>
   )

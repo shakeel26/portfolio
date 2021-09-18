@@ -25,8 +25,7 @@ const Navbar = () => {
       <MenuItem>
           <Link color="inherit" href="" >Shakeel</Link>
         </MenuItem>
-
-        <MenuItem>
+        <MenuItem >
           <Link color="inherit" href="#about" >About</Link>
         </MenuItem>
         <MenuItem>

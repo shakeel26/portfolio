@@ -4,10 +4,8 @@ import { runningProjects } from "../data";
 import Typography from "@material-ui/core/Typography";
 import ProjectCard from "./ProjectCard";
 
-
 const useStyles = makeStyles((theme) => ({
 }));
-
 
 const RunningProjects = () => {
   const classes = useStyles();

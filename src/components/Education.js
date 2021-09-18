@@ -62,10 +62,10 @@ const MediaControlCard = () => {
               <Link href="https://www.comsats.edu.pk/" target="_blank"> COMSATS University Islamabad</Link>
             </Typography>
             <Typography variant="h7">
-              MSc Computer Science
+              BSc Computer Science
             </Typography>
             <Typography variant="subtitle1" color="textSecondary">
-              2018 - 2021
+              2010 - 2014
             </Typography>
           </CardContent>
         </div>
