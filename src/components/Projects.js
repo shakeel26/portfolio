@@ -5,16 +5,7 @@ import ProjectCard from './ProjectCard';
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
-  codeIconCard: {
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    listStyle: 'none',
-    padding: theme.spacing(0.5),
-    margin: 0,
-    maxWidth: '450px'
-  }
+  
 }));
 
 
@@ -24,15 +15,15 @@ const Projects = () => {
 
   return (
     <section id="projects">
-      <div className={classes.codeIconCard}>
-          <Typography component="h3" variant="h5">
+      <>
+          <Typography component="h3" variant="h5" align="center">
             Apps have built!
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" align="center">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
-      </div>
+      </>
 
       <ProjectCard data={projects} />
 

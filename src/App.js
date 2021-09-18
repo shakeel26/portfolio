@@ -16,20 +16,20 @@ const App = () => {
   return (
     <>
       <Navbar />
-       <About />
-       <Divider />
+      <About />
+      <Divider />
 
-      <Projects /> 
+      <Projects />
       <Divider />
 
       <RunningProjects />
       <Divider />
 
-       <Skills />
-       <Divider />
-<Education />
+      <Skills />
+      <Divider />
+      <Education />
 
-      <Contact /> 
+      <Contact />
       <Divider />
 
       <Footer />

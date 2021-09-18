@@ -45,11 +45,11 @@ const Contact = () => {
 
     <section id="contact" className="relative">
 
-      <div className={classes.codeIconCard}>
-          <Typography component="h1" variant="h4">
+      <div>
+          <Typography component="h1" variant="h4" align="center">
             Get In Touch !
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" align="center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
             suscipit officia aspernatur veritatis. Asperiores, aliquid?
             Email me at <a href="mailto:someone@example.com" target="_top">someone@example.com</a>

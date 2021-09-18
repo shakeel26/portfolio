@@ -6,17 +6,6 @@ import ProjectCard from "./ProjectCard";
 
 
 const useStyles = makeStyles((theme) => ({
-  codeIconCard: {
-    alignItems: 'center',
-    display: 'flex',
-    justifyContent: 'center',
-    flexWrap: 'wrap',
-    listStyle: 'none',
-    padding: theme.spacing(0.5),
-    margin: 0,
-    maxWidth: '450px'
-    // marginLeft: '40%',
-  }
 }));
 
 
@@ -25,15 +14,15 @@ const RunningProjects = () => {
 
   return (
     <section id="projects">
-      <div className={classes.codeIconCard}>
-          <Typography component="h1" variant="h4">
+      <>
+          <Typography component="h1" variant="h4" align="center">
             Running Projects!
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" align="center">
             Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
-      </div>
+      </>
       
       <ProjectCard data={runningProjects} />
     </section>

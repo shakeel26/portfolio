@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100px'
     },
   skillsHeading: {
-    justifyContent: 'center',
+    alignContent: 'center',
     textDecorationLine: 'underline'
   }
 }));
@@ -33,10 +33,9 @@ const Skills = () => {
   return (
     <section id="skills">
 
-        <Typography className={classes.skillsHeading} component="h1" variant="h4">
+        <Typography className={classes.skillsHeading} component="h1" variant="h4" align="center">
           Skills & Technologies
         </Typography>
-
 
       <Grid container xs={6} spacing={2} className={classes.listProjects}>
         {skills.map((skill) =>
