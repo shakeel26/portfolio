@@ -31,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         textAlign: "center",
         border: 'none',
+        marginBottom: '5%',
         color: theme.palette.text.secondary,
         [theme.breakpoints.up('md')]: {
             marginLeft: '8%',
