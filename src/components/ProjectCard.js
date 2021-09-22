@@ -30,7 +30,13 @@ const useStyles = makeStyles((theme) => ({
       eachProjectCard: {
         padding: theme.spacing(1),
         textAlign: "center",
-        color: theme.palette.text.secondary      }
+        border: 'none',
+        color: theme.palette.text.secondary,
+        [theme.breakpoints.up('md')]: {
+            marginLeft: '8%',
+            marginRight: '8%'    
+        }
+    }
 }));
 
 const ProjectCard = (props) => {
@@ -45,11 +51,12 @@ const ProjectCard = (props) => {
     return (
         <Grid container className={classes.listProjects} spacing={5}>
             {props.data.map((project) =>
-                <Grid item xs={12} sm={5} md={5} lg={6} className={classes.eachProjectCard}>
+                <Grid item xs={12} sm={6} md={6} lg={4}>
                     <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}
                     onMouseOver={()=>sethoverCard({ raised: true, shadow:3})} 
                     onMouseOut={()=>sethoverCard({ raised:false, shadow:1 })}
                     raised={hoverCard.raised} zdepth={hoverCard.shadow}
+                    className={classes.eachProjectCard}
                     >
                         <CardMedia
                             className={classes.media}
