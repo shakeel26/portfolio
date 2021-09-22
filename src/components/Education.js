@@ -32,7 +32,6 @@ const MediaControlCard = () => {
     <>
 
 <Typography component="h1" variant="h4" align="center">
-
         Education
       </Typography>
       <Card className={classes.root} >

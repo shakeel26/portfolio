@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 
 const useStyles = makeStyles((theme) => ({
   textArea: {
-    width: '658px',
     border: 'none'
   }
 }));
@@ -57,7 +56,7 @@ const Contact = () => {
           </Typography>
       </div>
 
-      <Grid container xs={12} spacing={5}>
+      <Grid container xs={12} spacing={0}>
 
         <Grid item xs={12} sm={6} md={6} lg={6}>
 
@@ -75,7 +74,7 @@ const Contact = () => {
 
         </Grid>
 
-        <Grid item xs={12} sm={6} md={6} lg={6}>
+         <Grid item xs={12} sm={6} md={6} lg={6}>
 
           <Typography gutterBottom variant="h5" component="h2">
             Address !
@@ -83,13 +82,14 @@ const Contact = () => {
           <Typography variant="body2" color="textSecondary" component="p">
             Hans-Untermüller-Straße 8, 6020 Innsbruck, Austria
           </Typography>
-
+         
           <form
             netlify
             name="contact"
-            onSubmit={handleSubmit}>
+            onSubmit={handleSubmit}
+            spacing={0}>
 
-            <Grid container xs={12} spacing={10}>
+            <Grid container xs={12} spacing={0}>
               <Grid item xs={12} sm={6} md={6} lg={6}>
                 <Typography variant="h6" component="h6">
                   Name
@@ -125,7 +125,7 @@ const Contact = () => {
               </Button>
             </Typography>
           </form>
-        </Grid>
+          </Grid>
 
       </Grid>
     </section>

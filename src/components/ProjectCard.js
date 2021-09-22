@@ -49,7 +49,7 @@ const ProjectCard = (props) => {
     const classes = useStyles();
 
     return (
-        <Grid container className={classes.listProjects} spacing={5}>
+        <Grid container className={classes.listProjects} spacing={0}>
             {props.data.map((project) =>
                 <Grid item xs={12} sm={6} md={6} lg={4}>
                     <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}

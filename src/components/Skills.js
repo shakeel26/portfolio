@@ -36,7 +36,7 @@ const Skills = () => {
         Skills & Technologies
       </Typography>
 
-      <Grid container xs={6} spacing={2} className={classes.listSkills}>
+      <Grid container xs={6} spacing={0} className={classes.listSkills}>
         {skills.map((skill) =>
           <Grid item xs={6} sm={3} md={6} lg={2}>
             <img

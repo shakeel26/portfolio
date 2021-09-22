@@ -19,18 +19,20 @@ const App = () => {
       <About />
       <Divider />
 
-      <Projects />
+     <Projects />
       <Divider />
-
+ 
       <RunningProjects />
       <Divider />
 
       <Skills />
       <Divider />
+ 
       <Education />
+      <Divider />
+
 
       <Contact />
-      <Divider />
 
       <Footer />
     </>
