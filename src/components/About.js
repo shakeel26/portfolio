@@ -33,8 +33,8 @@ const About = () => {
   return (
     <section id="about">
       <Grid container spacing={0} className={classes.root}>
-        {about.map((about) =>
-          <Grid item xs={12} md={6} lg={6}>
+        {about.map((about, index) =>
+          <Grid item xs={12} md={6} lg={6} key={index}>
             <CardContent className={classes.content}>
               <Typography component="h5" variant="h5">
                 {about.title}

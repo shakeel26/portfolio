@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
 const ProjectCard = (props) => {
 
     const [hoverCard, sethoverCard] = useState({

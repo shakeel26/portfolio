@@ -27,16 +27,14 @@ const useStyles = makeStyles((theme) =>
   })
 );
 
-const MediaControlCard = () => {
+const Education = () => {
   const classes = useStyles();
 
   return (
     <>
-
       <Typography component="h1" variant="h4" align="center">
         Education
       </Typography>
-
       <Grid container spacing={0}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Card className={classes.root} spacing={5} >
@@ -56,30 +54,28 @@ const MediaControlCard = () => {
             </div>
           </Card>
         </Grid>
+        <Divider />
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <Card className={classes.root}>
+            <Icon graduation name="graduation cap" size='massive' />
+            <div className={classes.details}>
+              <CardContent className={classes.content}>
+                <Typography component="h5" variant="h5">
+                  <Link href="https://www.comsats.edu.pk/" target="_blank"> COMSATS University Islamabad</Link>
+                </Typography>
+                <Typography variant="h7">
+                  BSc Computer Science
+                </Typography>
+                <Typography variant="subtitle1" color="textSecondary">
+                  2010 - 2014
+                </Typography>
+              </CardContent>
+            </div>
+          </Card>
+        </Grid>
       </Grid>
-
-
-      {/* <Divider /> */}
-
-      {/* <Card className={classes.root}>
-        <Icon graduation name="graduation cap" size='massive' />
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
-            <Typography component="h5" variant="h5">
-              <Link href="https://www.comsats.edu.pk/" target="_blank"> COMSATS University Islamabad</Link>
-            </Typography>
-            <Typography variant="h7">
-              BSc Computer Science
-            </Typography>
-            <Typography variant="subtitle1" color="textSecondary">
-              2010 - 2014
-            </Typography>
-          </CardContent>
-        </div>
-      </Card> */}
-
     </>
   );
 }
 
-export default MediaControlCard;
+export default Education;
