@@ -1,3 +1,4 @@
+
 export const about = [{
   title: "Shakeel here!",
   description: "Mac Miller Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller "
@@ -66,7 +67,7 @@ export const runningProjects = [
 export const skills = [
   {
     title: "HTML5",
-    image: "./skills/html5.svg"
+    image: "/skills/html5.svg"
   },
   {
     title: "JavaScript",

@@ -1,4 +1,6 @@
 import React from "react";
+import Grid from "@material-ui/core/Grid";
+
 import {
   createStyles,
   makeStyles,
@@ -10,7 +12,7 @@ import Link from "@material-ui/core/Link";
 import Typography from "@material-ui/core/Typography";
 import { Icon } from 'semantic-ui-react'
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
       display: "flex"
@@ -31,29 +33,35 @@ const MediaControlCard = () => {
   return (
     <>
 
-<Typography component="h1" variant="h4" align="center">
+      <Typography component="h1" variant="h4" align="center">
         Education
       </Typography>
-      <Card className={classes.root} >
-        <Icon className={classes.cover} graduation name="graduation cap" size='massive' />
-        <div className={classes.details}>
-          <CardContent className={classes.content}>
-            <Typography component="h5" variant="h5">
-              <Link href="https://www.uibk.ac.at/" target="_blank"> Leopold-Franzens Universität Innsbruck</Link>
-            </Typography>
-            <Typography variant="h7">
-              MSc Computer Science
-            </Typography>
-            <Typography variant="subtitle1" color="textSecondary">
-              2018 - 2021
-            </Typography>
-          </CardContent>
-        </div>
-      </Card>
 
-      <Divider />
+      <Grid container spacing={0}>
+        <Grid item xs={12} sm={12} md={6} lg={6}>
+          <Card className={classes.root} spacing={5} >
+            <Icon className={classes.cover} graduation name="graduation cap" size='massive' />
+            <div className={classes.details}>
+              <CardContent className={classes.content}>
+                <Typography component="h5" variant="h5">
+                  <Link href="https://www.uibk.ac.at/" target="_blank"> Leopold-Franzens Universität Innsbruck</Link>
+                </Typography>
+                <Typography variant="h7">
+                  MSc Computer Science
+                </Typography>
+                <Typography variant="subtitle1" color="textSecondary">
+                  2018 - 2021
+                </Typography>
+              </CardContent>
+            </div>
+          </Card>
+        </Grid>
+      </Grid>
 
-      <Card className={classes.root}>
+
+      {/* <Divider /> */}
+
+      {/* <Card className={classes.root}>
         <Icon graduation name="graduation cap" size='massive' />
         <div className={classes.details}>
           <CardContent className={classes.content}>
@@ -68,7 +76,7 @@ const MediaControlCard = () => {
             </Typography>
           </CardContent>
         </div>
-      </Card>
+      </Card> */}
 
     </>
   );

@@ -11,7 +11,7 @@ import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles((theme) => ({
     media: {
-        height: "120px"
+        maxWidth: "100%"
     },
     chip: {
         margin: theme.spacing(0.5),
@@ -26,38 +26,38 @@ const useStyles = makeStyles((theme) => ({
     },
     cardHovered: {
         transform: "scale3d(1, 1.05, 1)"
-      },
-      eachProjectCard: {
+    },
+    eachProjectCard: {
         padding: theme.spacing(1),
         textAlign: "center",
         border: 'none',
         marginBottom: '5%',
         color: theme.palette.text.secondary,
-        [theme.breakpoints.up('md')]: {
-            marginLeft: '8%',
-            marginRight: '8%'    
-        }
+        // [theme.breakpoints.up('md')]: {
+        //     marginLeft: '8%',
+        //     marginRight: '8%'    
+        // }
     }
 }));
 
 const ProjectCard = (props) => {
 
     const [hoverCard, sethoverCard] = useState({
-        raised:false,
-        shadow:1,
-      })
+        raised: false,
+        shadow: 1,
+        currentIndex: -1
+    })
 
     const classes = useStyles();
 
     return (
         <Grid container className={classes.listProjects} spacing={0}>
-            {props.data.map((project) =>
-                <Grid item xs={12} sm={6} md={6} lg={4}>
-                    <Card classes={{root: hoverCard.raised ? classes.cardHovered : ""}}
-                    onMouseOver={()=>sethoverCard({ raised: true, shadow:3})} 
-                    onMouseOut={()=>sethoverCard({ raised:false, shadow:1 })}
-                    raised={hoverCard.raised} zdepth={hoverCard.shadow}
-                    className={classes.eachProjectCard}
+            {props.data.map((project, index) =>
+                <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
+                    <Card classes={{ root: hoverCard.currentIndex === index ? classes.cardHovered : "" }}
+                        onMouseOver={() => sethoverCard({ raised: true, shadow: 3, currentIndex: index })}
+                        onMouseOut={() => sethoverCard({ raised: false, shadow: 1, currentIndex: -1 })}
+                        className={classes.eachProjectCard}
                     >
                         <CardMedia
                             className={classes.media}

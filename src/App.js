@@ -31,7 +31,6 @@ const App = () => {
       <Education />
       <Divider />
 
-
       <Contact />
 
       <Footer />
@@ -40,7 +39,3 @@ const App = () => {
 }
 
 export default App;
-
-// 1 - Hover all project cards together 
-// 2 - Headings , contact , projects to center 
-// 3 - projectcard width
