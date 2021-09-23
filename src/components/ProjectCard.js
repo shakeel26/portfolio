@@ -93,9 +93,10 @@ const ProjectCard = (props) => {
                             </Link>
 
                             <Typography component="ul" className={classes.listProjects}>
-                                {project.tech.map((element) =>
+                                {project.tech.map((element, index) =>
                                     <Chip
                                         label={element}
+                                        key={index}
                                         className={classes.chip}
                                     />
                                 )}
