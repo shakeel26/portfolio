@@ -1,7 +1,7 @@
 
 export const about = [{
-  title: "Shakeel here!",
-  description: "Mac Miller Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller Mac Miller             Mac Miller Mac Miller Mac Millerv Mac Miller Mac Miller "
+  title: "Hi, Shakeel here!",
+  description: "A passionate Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
 }];
 
 export const projects = [

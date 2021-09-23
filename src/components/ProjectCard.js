@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -6,7 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Link from '@material-ui/core/Link';
 import Chip from '@material-ui/core/Chip';
-import Grid from "@material-ui/core/Grid";
+import Grid from "@mui/material/Grid";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,25 +44,10 @@ const ProjectCard = (props) => {
         shadow: 1,
         currentIndex: -1
     })
-    const [isMobile, setIsMobile] = useState(false)
-
-    const handleResize = () => {
-        if (window.innerWidth < 600) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
-      }
-
-      useEffect(() => {
-        window.addEventListener("resize", handleResize)
-      })
-
     const classes = useStyles();
 
-
     return (
-        <Grid container className={classes.listProjects} spacing={isMobile ? 0 : 4}>
+        <Grid container className={classes.listProjects} spacing={{ xs: 0, sm: 4 }}>
             {props.data.map((project, index) =>
                 <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
                     <Card classes={{ root: hoverCard.currentIndex === index ? classes.cardHovered : "" }}

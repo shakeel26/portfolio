@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    // marginTop: '5%',
+    marginTop: '5%',
   },
   cover: {
     alignItems: 'right',
@@ -36,10 +36,10 @@ const About = () => {
         {about.map((about, index) =>
           <Grid item xs={12} md={6} lg={6} key={index}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5">
+              <Typography component="h2" variant="h2">
                 {about.title}
               </Typography>
-              <Typography>
+              <Typography variant="h6">
                 {about.description}
 
               </Typography>
