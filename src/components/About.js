@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    marginTop: '5%',
+    // marginTop: '%',
   },
   cover: {
     alignItems: 'right',
@@ -46,13 +46,13 @@ const About = () => {
             </CardContent>
 
             <div className={classes.buttons}>
-              <Link href="#contact" color="inherit">
+              <Link href="#contact" color="inherit" underline="none">
                 <Button variant="contained">
                   Contact
                 </Button>
               </Link>
 
-              <Link href="#projects" className={classes.button2} color="inherit">
+              <Link href="#projects" className={classes.button2} color="inherit" underline="none">
                 <Button variant="contained" >
                   Previous work
                 </Button>
