@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Link from '@material-ui/core/Link';
@@ -55,10 +54,16 @@ const ProjectCard = (props) => {
                         onMouseOut={() => sethoverCard({ raised: false, shadow: 1, currentIndex: -1 })}
                         className={classes.eachProjectCard}
                     >
-                        <CardMedia
+                        {/* <CardMedia
                             className={classes.media}
                             image={project.image}
                             title={project.title}
+                        /> */}
+
+                        <img
+                            className={classes.skillIcon}
+                            src={project.image}
+                            alt={project.title}
                         />
                         <CardContent>
                             <Typography gutterBottom variant="h5" component="h2">
