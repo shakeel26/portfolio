@@ -1,7 +1,7 @@
 
 export const about = [{
   title: "Hi, <Shakeel here! />",
-  description: "A passionate Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks."
+  description: "A Web Developer & Self Emplyed for IT services in Austria, based in Innsbruk. \n having an experience of building Web applications with JavaScript / Reactjs / Nodejs and."
 }];
 
 export const projects = [
@@ -106,8 +106,6 @@ export const skills = [
     image: "./skills/postgresql-horizontal.svg"
   }
 ];
-
-
 
 export const testimonials = [
   {

@@ -10,6 +10,7 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles(theme => ({
   root: {
     // marginTop: '%',
+    backgroundImage: "url('./header_bg.png')"
   },
   cover: {
     alignItems: 'right',
@@ -65,7 +66,7 @@ const About = () => {
         <Grid item xs={12} md={6} lg={6}>
           <img
             className={classes.cover}
-            src="./set-programmer-icon.webp"
+            src="./set-programmer-icon.svg"
             alt="cover coding"
           />
         </Grid>

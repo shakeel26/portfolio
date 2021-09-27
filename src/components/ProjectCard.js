@@ -10,7 +10,8 @@ import Grid from "@mui/material/Grid";
 
 const useStyles = makeStyles((theme) => ({
     media: {
-        maxWidth: "100%"
+        maxWidth: "100%",
+        maxHeight: '100%'
     },
     chip: {
         margin: theme.spacing(0.5),
