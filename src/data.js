@@ -2,7 +2,7 @@ export const about = [
   {
     title: "Hi, <Shakeel here! />",
     description:
-      "A passionate Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks.",
+      "A Freelance Web Developer based in Innsbruck and having an experience of building Web applications with state-of-the-art technologies.  I really love to build apps from scratch that are intuitive and pleasing for the end-users. I commit code via Git.",
   },
 ];
 
