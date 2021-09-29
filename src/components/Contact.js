@@ -48,7 +48,7 @@ const Contact = () => {
           <Typography component="h1" variant="h4" align="center">
             Get In Touch !
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p" align="center">
+          <Typography variant="h6" color="textSecondary" align="center">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
             suscipit officia aspernatur veritatis. Asperiores, aliquid?
             Email me at <a href="mailto:someone@example.com" target="_top">someone@example.com</a>
@@ -79,7 +79,7 @@ const Contact = () => {
           <Typography gutterBottom variant="h5" component="h2">
             Address !
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="h6">
             Hans-Untermüller-Straße 8, 6020 Innsbruck, Austria
           </Typography>
          

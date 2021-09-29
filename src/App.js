@@ -145,15 +145,15 @@ const App = (props) => {
 
   return (
     <ThemeProvider theme={theme}>
-<FormGroup className={classes.formGroup}>
+{/* <FormGroup className={classes.formGroup}>
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked checked={dark} onChange={() => setDark(!dark)} />}
         label=""
       />
-    </FormGroup>
+    </FormGroup> */}
           <Paper>
 
-        {/* <Navbar /> */}
+        <Navbar />
         <About />
         <Divider />
 

@@ -1,8 +1,9 @@
 export const about = [
   {
-    title: "Hi, <Shakeel here! />",
+    title: "Hi, Shakeel here!",
+    location: "Innsbruck, Austria",
     description:
-      "A Freelance Web Developer based in Innsbruck and having an experience of building Web applications with state-of-the-art technologies.  I really love to build apps from scratch that are intuitive and pleasing for the end-users. I commit code via Git.",
+      "A Freelance Web Developer, having an experience of building Web applications with state-of-the-art technologies.  I really love to build apps from scratch that are intuitive and pleasing for the end-users. I commit code via Git.",
   },
 ];
 

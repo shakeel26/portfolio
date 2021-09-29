@@ -6,14 +6,21 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
+import Image from './header__bg.png';
 
 const useStyles = makeStyles(theme => ({
   root: {
     // marginTop: '%',
-    backgroundImage: `url(${process.env.PUBLIC_URL + './header_bg.png'})`
+    backgroundImage: `url(${Image})`,
+      background: 'grey'
   },
   cover: {
+  },
+  coverPhoto: {
     alignItems: 'right',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none'
+    }
   },
   content: {
     flex: '1 0 auto',
@@ -40,7 +47,8 @@ const About = () => {
               <Typography component="h2" variant="h2">
                 {about.title}
               </Typography>
-              <Typography variant="h6">
+              <Typography variant="h6" > {about.location} </Typography>
+              <Typography variant="h5">
                 {about.description}
 
               </Typography>
@@ -63,13 +71,14 @@ const About = () => {
           </Grid>
         )}
 
-        <Grid item xs={12} md={6} lg={6}>
-          <img
-            className={classes.cover}
-            src={process.env.PUBLIC_URL + '/set-programmer-icon.webp'}
-            alt="cover coding"
-          />
-        </Grid>
+          <Grid item xs={12} md={6} lg={6} className={classes.coverPhoto}>
+            <img
+              className={classes.cover}
+              src={process.env.PUBLIC_URL + '/set-programmer-icon.webp'}
+              alt="cover coding"
+            />
+          </Grid>
+
       </Grid>
     </section>
   )

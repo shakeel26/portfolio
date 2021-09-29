@@ -31,21 +31,21 @@ const Navbar = () => {
           </MenuItem>
         </Link>
 
-        <Link className={classes.linkItem} color="inherit" href="#about" underline="none">
+        {/* <Link className={classes.linkItem} color="inherit" href="#about" underline="none">
           <MenuItem >About</MenuItem>
-        </Link>
+        </Link> */}
        
           <Link className={classes.linkItem} color="inherit" href="#skills" underline="none">
           <MenuItem>Skills        </MenuItem>
           </Link>
         
           <Link className={classes.linkItem} color="inherit" href="#projects" underline="none">
-          <MenuItem>Projects        </MenuItem>
+          <MenuItem>Projects </MenuItem>
           </Link>
         
-          <Link className={classes.linkItem} color="inherit" href="#contact" underline="none">
+          {/* <Link className={classes.linkItem} color="inherit" href="#contact" underline="none">
           <MenuItem>Contact</MenuItem>
-          </Link>
+          </Link> */}
         
       </Toolbar>
     </AppBar>

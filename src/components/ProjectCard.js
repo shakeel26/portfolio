@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(1),
         textAlign: "center",
         border: 'none',
-        marginBottom: '5%',
+        marginTop: '4%',
         color: theme.palette.text.secondary
     }
 }));
@@ -49,7 +49,7 @@ const ProjectCard = (props) => {
     return (
         <Grid container className={classes.listProjects} spacing={{ xs: 0, sm: 4 }}>
             {props.data.map((project, index) =>
-                <Grid item xs={12} sm={6} md={6} lg={4} key={index}>
+                <Grid item xs={12} sm={6} md={6} lg={4} key={index} >
                     <Card classes={{ root: hoverCard.currentIndex === index ? classes.cardHovered : "" }}
                         onMouseOver={() => sethoverCard({ raised: true, shadow: 3, currentIndex: index })}
                         onMouseOut={() => sethoverCard({ raised: false, shadow: 1, currentIndex: -1 })}
