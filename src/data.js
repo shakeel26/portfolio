@@ -9,6 +9,15 @@ export const about = [
 
 export const projects = [
   {
+    title: "Hartl Consulting",
+    subtitle: "WordPress using Elementor",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: `${process.env.PUBLIC_URL}/projects/hartl_consulting_logo.png`,
+    link: "https://hartl-consulting.at/",
+    tech: ["WordPress", "Elementor", "CSS"],
+  },
+  {
     title: "React Reserve",
     subtitle: "MERN Stack",
     description:
@@ -47,15 +56,6 @@ export const projects = [
 ];
 
 export const runningProjects = [
-  {
-    title: "Hartl Consulting",
-    subtitle: "WordPress using Elementor",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: `${process.env.PUBLIC_URL}/projects/hartl_consulting_logo.png`,
-    link: "https://hartl-consulting.at/",
-    tech: ["WordPress", "Elementor", "CSS"],
-  },
   {
     title: "May's Grill",
     subtitle: "MERN Stack Project",

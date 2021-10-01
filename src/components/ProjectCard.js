@@ -30,8 +30,8 @@ const useStyles = makeStyles((theme) => ({
     eachProjectCard: {
         padding: theme.spacing(1),
         textAlign: "center",
-        border: 'none',
         marginTop: '4%',
+        width: '70%',
         color: theme.palette.text.secondary
     }
 }));
